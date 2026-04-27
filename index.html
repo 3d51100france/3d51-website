@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="3D51 - Studio d'impression 3D et Scan 3D à Reims (Grand-Est). Impression FDM et Résine haute précision, rétro-ingénierie.">
+    <title>3D51 | Studio d'Impression 3D & Scan 3D à Reims</title>
+
+    <link rel="icon" type="image/png" href="logo-cube.png">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <style>
+        :root {
+            --primary-orange: #f57c00;
+            --dark-brown: #3e2723;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        main { flex: 1 0 auto; }
+        .orange-theme { background-color: var(--primary-orange) !important; }
+        .orange-text-theme { color: var(--primary-orange) !important; }
+        
+        .brand-logo img {
+            height: 50px;
+            margin-top: 5px;
+            vertical-align: middle;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(62, 39, 35, 0.8), rgba(62, 39, 35, 0.9)), url('./main_france.jpg') center/cover;
+            color: white;
+            padding: 100px 0;
+        }
+        .card .card-content .card-title { font-weight: 500; color: var(--dark-brown); }
+        .btn, .btn-large { background-color: var(--primary-orange); }
+        .btn:hover, .btn-large:hover { background-color: #ef6c00; }
+        
+        input:focus:not([type]):not([readonly]),
+        input[type=text]:not(.browser-default):focus:not([readonly]),
+        input[type=email]:not(.browser-default):focus:not([readonly]),
+        textarea.materialize-textarea:focus:not([readonly]) {
+            border-bottom: 1px solid var(--primary-orange) !important;
+            box-shadow: 0 1px 0 0 var(--primary-orange) !important;
+        }
+        input:focus:not([type]):not([readonly]) + label,
+        input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+        input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+        textarea.materialize-textarea:focus:not([readonly]) + label {
+            color: var(--primary-orange) !important;
+        }
+        .mat-list li { margin-bottom: 10px; }
+        footer.page-footer { background-color: var(--dark-brown); }
+    </style>
+</head>
+<body>
+
+    <div class="navbar-fixed">
+        <nav class="white z-depth-2">
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo">
+                    <img src="logo-cube.png" alt="3D51 Cube Logo">
+                    <img src="logo-text.png" alt="3D51 Text Logo" style="height: 40px; margin-left: 10px;">
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger orange-text-theme"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#services" class="black-text">Nos Services</a></li>
+                    <li><a href="#materials" class="black-text">Matériaux</a></li>
+                    <li><a href="#advantages" class="black-text">Pourquoi Nous ?</a></li>
+                    <li><a href="#contact" class="btn waves-effect waves-light round">Contactez-nous</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#services">Nos Services</a></li>
+        <li><a href="#materials">Matériaux</a></li>
+        <li><a href="#advantages">Pourquoi Nous ?</a></li>
+        <li><a href="#contact">Contactez-nous</a></li>
+    </ul>
+
+    <main>
+        <section class="hero-section center-align">
+            <div class="container">
+                <h1 class="font-weight-bold">Donnez Vie à Vos Idées en 3D</h1>
+                <h5 class="light">Studio privé d'impression 3D et de Scan à Reims. Interventions en Grand-Est et livraison dans toute la France.</h5>
+                <br>
+                <a href="#contact" class="btn-large waves-effect waves-light orange-theme">Demander un Devis Gratuit</a>
+            </div>
+        </section>
+
+        <section id="services" class="section scrollspy container">
+            <h3 class="center-align" style="color: var(--dark-brown);">Nos Compétences</h3>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card hoverable center-align" style="padding: 20px;">
+                        <i class="material-icons large orange-text-theme">layers</i>
+                        <span class="card-title block">Impression FDM</span>
+                        <p>Production de pièces plastiques fonctionnelles, du prototypage rapide à la petite série. Utilisation de thermoplastiques standards et techniques (renforcés carbone/verre).</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card hoverable center-align" style="padding: 20px;">
+                        <i class="material-icons large orange-text-theme">precision_manufacturing</i>
+                        <span class="card-title block">Impression Résine (SLA/DLP)</span>
+                        <p>Imprimantes ultra-précises pour des détails microscopiques. Idéal pour la bijouterie (cire calcinable), le dentaire, la figurine et la micro-mécanique.</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card hoverable center-align" style="padding: 20px;">
+                        <i class="material-icons large orange-text-theme">360</i>
+                        <span class="card-title block">Scan 3D & Rétro-Ingénierie</span>
+                        <p>Numérisation haute fidélité. Nous nous déplaçons chez vous. Fourniture du fichier brut ou création d'un modèle CAO prêt pour la modification/production.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="materials" class="section scrollspy grey lighten-4">
+            <div class="container">
+                <h3 class="center-align" style="color: var(--dark-brown);">Guide des Matériaux</h3>
+                <p class="center-align">Choisissez le matériau parfait selon votre besoin.</p>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card z-depth-2">
+                            <div class="card-content">
+                                <span class="card-title"><i class="material-icons orange-text-theme left">category</i>Plastiques FDM</span>
+                                <ul class="mat-list">
+                                    <li><strong>PLA :</strong> Idéal pour le prototypage visuel, les figurines et la décoration. Écologique et économique.</li>
+                                    <li><strong>PETG :</strong> Excellent compromis solidité/flexibilité. Résistant à l'eau, parfait pour des pièces mécaniques simples.</li>
+                                    <li><strong>ABS & ASA :</strong> Haute résistance à la chaleur et aux chocs. L'ASA résiste aux UV (parfait pour l'extérieur et l'automobile).</li>
+                                    <li><strong>TPU (Flexible) :</strong> Matériau élastique pour la création de joints, pneus, coques de protection ou semelles.</li>
+                                    <li><strong>Composites (ABS-GF, ASA-CF) :</strong> Renforcés en fibre de verre (GF) ou de carbone (CF). Rigidité extrême, remplacement de pièces métalliques.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="card z-depth-2">
+                            <div class="card-content">
+                                <span class="card-title"><i class="material-icons orange-text-theme left">water_drop</i>Résines Spéciales</span>
+                                <ul class="mat-list">
+                                    <li><strong>Résine Haute Résolution 8K/12K :</strong> Pour le modélisme, les figurines de collection et les détails infimes.</li>
+                                    <li><strong>Résine Calcinable (Castable Wax) :</strong> Spéciale fonderie et bijouterie. Fond sans résidus pour le coulage d'or, d'argent ou autres métaux.</li>
+                                    <li><strong>Résine Technique (Tough) :</strong> Simule les propriétés de l'ABS. Très résistante aux contraintes mécaniques et aux chocs.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="advantages" class="section scrollspy container">
+            <h3 class="center-align" style="color: var(--dark-brown);">Nos Avantages</h3>
+            <div class="row">
+                <div class="col s12 m6 l3 center-align">
+                    <i class="material-icons large orange-text-theme">speed</i>
+                    <h5>Réactivité</h5>
+                    <p>Travail dans les plus brefs délais selon notre carnet de commandes.</p>
+                </div>
+                <div class="col s12 m6 l3 center-align">
+                    <i class="material-icons large orange-text-theme">tune</i>
+                    <h5>Sur-Mesure</h5>
+                    <p>Studio privé : nous adaptons nos processus à chaque client et projet unique.</p>
+                </div>
+                <div class="col s12 m6 l3 center-align">
+                    <i class="material-icons large orange-text-theme">science</i>
+                    <h5>Innovation</h5>
+                    <p>Nous n'avons pas peur des expériences complexes ni des nouveaux matériaux.</p>
+                </div>
+                <div class="col s12 m6 l3 center-align">
+                    <i class="material-icons large orange-text-theme">inventory</i>
+                    <h5>Évolutivité</h5>
+                    <p>De la pièce unique au petit lot de production ou vente en gros (B2B/B2C).</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section scrollspy white">
+            <div class="container">
+                <h3 class="center-align" style="color: var(--dark-brown);">Demander un Devis</h3>
+                <p class="center-align">Remplissez le formulaire ci-dessous. Nous vous répondrons rapidement.</p>
+                
+                <div class="row">
+                    <div class="col s12 m8 offset-m2">
+                        <div class="card-panel">
+                            <form action="https://formspree.io/f/mojyzbwe" method="POST" enctype="multipart/form-data">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input id="prenom" name="prenom" type="text" class="validate" required>
+                                        <label for="prenom">Prénom *</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input id="nom" name="nom" type="text" class="validate" required>
+                                        <label for="nom">Nom *</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12 m6">
+                                        <input id="email" name="email" type="email" class="validate" required>
+                                        <label for="email">Email *</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="telephone" name="telephone" type="tel" class="validate">
+                                        <label for="telephone">Téléphone</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="description" name="description" class="materialize-textarea" required></textarea>
+                                        <label for="description">Description de votre projet (Matériau, dimensions, quantité...) *</label>
+                                    </div>
+                                </div>
+                                <div class="file-field input-field">
+                                    <div class="btn orange-theme">
+                                        <span>Fichier (3D/Plan)</span>
+                                        <input type="file" name="fichier" accept=".stl,.obj,.step,.stp,.pdf,.png,.jpg">
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text" placeholder="Joindre un fichier (optionnel)">
+                                    </div>
+                                </div>
+                                <div class="center-align" style="margin-top: 30px;">
+                                    <p class="grey-text text-darken-1" style="font-size: 0.8rem;">* Champs obligatoires</p>
+                                    <button class="btn-large waves-effect waves-light orange-theme" type="submit" name="action">Envoyer la demande
+                                        <i class="material-icons right">send</i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">3D51</h5>
+                    <p class="grey-text text-lighten-4">Votre partenaire d'impression 3D et d'ingénierie inversée.<br>Basé à Reims, opérant dans tout le Grand-Est et la France entière.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Informations Légales</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="cgv.html">Mentions Légales & CGV</a></li>
+                        <li><a class="grey-text text-lighten-3" href="politique.html">RGPD, Garanties & Retours</a></li>
+                        <li><a class="grey-text text-lighten-3" href="index.html#contact">Nous Contacter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright" style="background-color: rgba(0,0,0,0.2);">
+            <div class="container">
+                © 2026 3D51 - Tous droits réservés
+                <a class="grey-text text-lighten-4 right" href="https://3d51.fr">3d51.fr</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var sidenav = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sidenav);
+            var scrollspy = document.querySelectorAll('.scrollspy');
+            M.ScrollSpy.init(scrollspy, { scrollOffset: 60 });
+        });
+    </script>
+</body>
+</html>

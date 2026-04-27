@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Introuvable | 3D51</title>
+    
+    <link rel="icon" type="image/png" href="logo-cube.png?v=2">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <style>
+        :root {
+            --primary-orange: #f57c00;
+            --dark-brown: #3e2723;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        /*centered*/
+        main { 
+            flex: 1 0 auto; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            padding: 40px 0;
+        }
+        .orange-theme { background-color: var(--primary-orange) !important; }
+        .orange-text-theme { color: var(--primary-orange) !important; }
+        
+        .brand-logo img {
+            height: 50px;
+            margin-top: 5px;
+            vertical-align: middle;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            color: var(--dark-brown);
+            margin: 0;
+            line-height: 1;
+        }
+        .error-message {
+            color: var(--dark-brown);
+            font-weight: 500;
+        }
+        footer.page-footer { background-color: var(--dark-brown); }
+    </style>
+</head>
+<body>
+
+    <div class="navbar-fixed">
+        <nav class="white z-depth-2">
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo">
+                    <img src="logo-cube.png" alt="3D51 Cube Logo">
+                    <img src="logo-text.png" alt="3D51 Text Logo" style="height: 40px; margin-left: 10px;">
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger orange-text-theme"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html" class="black-text">Retour à l'Accueil</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Retour à l'Accueil</a></li>
+    </ul>
+
+    <main>
+        <div class="container center-align">
+            <i class="material-icons orange-text-theme" style="font-size: 100px;">warning_amber</i>
+            <h1 class="error-code">404</h1>
+            <h4 class="error-message">Oups ! Page introuvable.</h4>
+            <p style="font-size: 1.2rem; margin-bottom: 40px;" class="grey-text text-darken-1">
+                Il semble que cette page se soit perdue en dehors du plateau d'impression ou n'existe plus.<br>
+                Vérifiez l'URL ou retournez à la page d'accueil pour continuer.
+            </p>
+            <a href="index.html" class="btn-large waves-effect waves-light orange-theme">
+                <i class="material-icons left">home</i>Retour à l'Accueil
+            </a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">3D51</h5>
+                    <p class="grey-text text-lighten-4">Votre partenaire d'impression 3D et d'ingénierie inversée.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Informations Légales</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="cgv.html">Mentions Légales & CGV</a></li>
+                        <li><a class="grey-text text-lighten-3" href="politique.html">RGPD, Garanties & Retours</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright" style="background-color: rgba(0,0,0,0.2);">
+            <div class="container">
+                © 2026 3D51 - Tous droits réservés
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var sidenav = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sidenav);
+        });
+    </script>
+</body>
+</html>
